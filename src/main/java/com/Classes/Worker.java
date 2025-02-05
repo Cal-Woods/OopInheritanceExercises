@@ -48,4 +48,15 @@ public class Worker {
     public int getWeeklyHours() {
         return weeklyHours;
     }
+
+    //Setters
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setRatePerHour(double rate) {
+        this.ratePerHour = rate;
+    }
+    public void setWeeklyHours(int hours) {
+        this.weeklyHours = hours;
+    }
 }
