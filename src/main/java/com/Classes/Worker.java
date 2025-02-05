@@ -8,10 +8,30 @@ public class Worker {
     private int weeklyHours;
 
     //A shared attribute for id generation
-    private static int idGenerator = 0;
+    private static int idGenerator = 1;
 
-    //Constructors
+    //Constructor - no arguments
     public Worker() {
-        
+        //set id to current idgenerator value, then increase by 1
+        id = idGenerator++;
+
+        //Set name to "John"
+        name = "John Doe";
+
+        //Set ratePerHour to 0.00
+        ratePerHour = 1.00;
+
+        //Set weeklyHours to 1
+        weeklyHours = 1;
+    }
+    //Constructor - Arguments, except id
+    public Worker(String name, double rate, int hours) {
+        //Set this.id = value of idGenerator & increment by 1
+        id = idGenerator++;
+
+        //Set class attributes to constructor arguments
+        this.name = name;
+        this.ratePerHour = rate;
+        this.weeklyHours = hours;
     }
 }
