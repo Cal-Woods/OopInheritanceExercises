@@ -34,4 +34,18 @@ public class Worker {
         this.ratePerHour = rate;
         this.weeklyHours = hours;
     }
+
+    //Getters
+    public int getId() {
+        return id;
+    }
+    public String getName() {
+        return name;
+    }
+    public double getRatePerHour() {
+        return ratePerHour;
+    }
+    public int getWeeklyHours() {
+        return weeklyHours;
+    }
 }
